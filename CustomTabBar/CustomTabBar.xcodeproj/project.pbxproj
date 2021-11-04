@@ -13,6 +13,7 @@
 		D08EBB092731873300FCD1D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08EBB082731873300FCD1D0 /* Preview Assets.xcassets */; };
 		D08EBB162732338600FCD1D0 /* ScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBB152732338500FCD1D0 /* ScreenRouter.swift */; };
 		D08EBB19273233E300FCD1D0 /* TabbarOneScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBB18273233E300FCD1D0 /* TabbarOneScreen.swift */; };
+		D08EBB1C27340CA800FCD1D0 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08EBB1B27340CA800FCD1D0 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D08EBB082731873300FCD1D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D08EBB152732338500FCD1D0 /* ScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRouter.swift; sourceTree = "<group>"; };
 		D08EBB18273233E300FCD1D0 /* TabbarOneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarOneScreen.swift; sourceTree = "<group>"; };
+		D08EBB1B27340CA800FCD1D0 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		D08EBB122731878500FCD1D0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D08EBB1A27340C8D00FCD1D0 /* HomeScreen */,
 				D08EBB17273233A600FCD1D0 /* Tabbar1 */,
 			);
 			path = Screens;
@@ -103,6 +106,14 @@
 				D08EBB18273233E300FCD1D0 /* TabbarOneScreen.swift */,
 			);
 			path = Tabbar1;
+			sourceTree = "<group>";
+		};
+		D08EBB1A27340C8D00FCD1D0 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D08EBB1B27340CA800FCD1D0 /* HomeScreen.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08EBB162732338600FCD1D0 /* ScreenRouter.swift in Sources */,
+				D08EBB1C27340CA800FCD1D0 /* HomeScreen.swift in Sources */,
 				D08EBB042731872A00FCD1D0 /* ContentView.swift in Sources */,
 				D08EBB19273233E300FCD1D0 /* TabbarOneScreen.swift in Sources */,
 				D08EBB022731872A00FCD1D0 /* CustomTabBarApp.swift in Sources */,

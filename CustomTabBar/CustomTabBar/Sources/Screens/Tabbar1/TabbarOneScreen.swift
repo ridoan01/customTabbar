@@ -12,25 +12,32 @@ struct TabbarOneScreen: View {
 	@State var showPopUp = false
 	
 	var body: some View {
-		
-		VStack{
-			Spacer()
-			switch screenRouter.currentPage{
-			case .home:
-				Text("Home")
-			case .budget:
-				Text("Budget")
-			case .daily:
-				Text("Daily")
-			case.stats:
-				Text("Stats")
-			case.profile:
-				Text("Profile")
-			case .setting:
-				Text("Setting")
+		ZStack{
+			VStack{
+				Spacer()
+				switch screenRouter.currentPage{
+				case .home:
+						//				Text("Home")
+					HomeScreen()
+				case .budget:
+					Text("Budget")
+				case .daily:
+					Text("Daily")
+				case.stats:
+					Text("Stats")
+				case.profile:
+					ScrollView(.vertical){
+						Text("Profile")
+							.frame(width: UIScreen.main.bounds.width, height: 1000)
+							.background(Color.green)
+					}
+					
+				case .setting:
+					Text("Setting")
+				}
+				Spacer()
+				
 			}
-			Spacer()
-			
 			HStack(alignment: .center){
 				TabbarOneIcons(screenRouter: screenRouter, assignedPage: .home, defIconName: "house", tabName: "Home")
 				TabbarOneIcons(screenRouter: screenRouter, assignedPage: .stats, defIconName: "chart.xyaxis.line", tabName: "Stats")
@@ -43,7 +50,9 @@ struct TabbarOneScreen: View {
 			.frame(width: UIScreen.main.bounds.width-40, height: 60, alignment: .center)
 			.background(Color(UIColor.secondarySystemBackground))
 			.cornerRadius(8)
+			.offset(x: 0, y: UIScreen.main.bounds.height/2-80)
 		}
+		.edgesIgnoringSafeArea(.bottom)
 	}
 }
 
